@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   	<title>Front Page</title>
+	<style> h1 {text-align: center;}</style>
+	<style>
+		
+		.levels {
+			background-color: rgba(0, 0, 0, 0.8);
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+			color: black;
+			width: 40%;
+			border-radius: 5px;
+			text-align: center;
+			padding: 8px 20px;
+			font-size: 20px; 
+			font-family: Arial, sans-serif; 
+		}
+		
+		/* Base button style */
+		.button {
+		background-color: rgba(255, 255, 255, 0.9);
+      		color: black;
+      		border: none;
+      		padding: 10px 20px;
+      		text-align: center;
+      		text-decoration: none;
+      		font-size: 16px;
+      		cursor: pointer;
+      		border-radius: 5px;
+      		transition: background-color 0.3s;
+		}
+
+		/* Hover effects for each button */
+		.button:hover:nth-of-type(1) {
+			background-color: green;
+		}
+
+		.button:hover:nth-of-type(2) {
+			background-color: yellow;
+		}
+
+		.button:hover:nth-of-type(3) {
+			background-color: red;
+		}
+		.button:hover:nth-of-type(4) {
+			background-color: purple;
+		}
+
+	</style>
+</head>
+<body style="background-image: url('snakeBack.jpg'); background-size: cover; background-repeat: no-repeat;">
+
+	<h1> Welcome to Snake Game </h1>
+	<br>
+	<div class="levels">
+		Select your level <br><br>
+		
+		<button class="button" onclick="location.href='SnakeMid.html'">Easy - No Wall</button> <br><br>
+		<button class="button" onclick="location.href='SnakeGame.html'">Medium - Walls & walls</button> <br><br>
+		<button class="button" onclick="location.href='SnakeFast.html'">Hard - It goes fast</button> <br> <br>
+		<button class="button" onclick="location.href='SnakeLast.html'">Hard - Can't Hold It</button>
+	<br>
+	<br>
+	<br>
+	<br>
+	</div>
+
+</body>
+</html>
